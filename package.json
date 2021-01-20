@@ -1,0 +1,32 @@
+{
+  "version": "1.0.0",
+  "description": "Deligite API",
+  "main": "src/app.js",
+  "scripts": {
+    "dev": "nodemon src/app.js --exec babel-node --",
+    "start": "node dist/app.js",
+    "test": "jest",
+    "build": "babel src --out-dir dist --copy-files"
+  },
+  "author": "Oluwaseyi Joshua <js-devil>",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "debug": "^4.1.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "helmet": "^3.22.0",
+    "morgan": "^1.10.0",
+    "sqlite3": "^5.0.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.1",
+    "@babel/core": "^7.10.2",
+    "@babel/node": "^7.10.1",
+    "@babel/preset-env": "^7.10.2",
+    "nodemon": "^2.0.2"
+  }
+}
